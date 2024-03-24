@@ -112,7 +112,7 @@
                                         <HeaderStyle HorizontalAlign="Center" VerticalAlign="Middle" />
                                         <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
                                         </asp:BoundField>
-                                        <asp:CommandField HeaderText="Chi tiết" ShowSelectButton="True">
+                                        <asp:CommandField HeaderText="Chi tiết" SelectText="Xem chi tiết" ShowSelectButton="True">
                                         <HeaderStyle HorizontalAlign="Center" VerticalAlign="Middle" />
                                         <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
                                         </asp:CommandField>
