@@ -1,6 +1,133 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="HomePage.aspx.cs" Inherits="Lab11_Student_Managment.HomePage" %>
+
+<asp:Content ID="Content" ContentPlaceHolderID="head" runat="server">
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            //$(document).ready(function () {
+            //$('.table').DataTable();
+            // });
+
+            $(".table").prepend($("<thead></thead>").append($(this).find("tr:first"))).dataTable();
+            //$(".table").dataTable();
+
+        });
+    </script>
+
+    <style>
+        .dataTables_filter {
+            margin-bottom: 15px
+        }
+    </style>
+</asp:Content>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
+    <div class="container">
 
+        <div class="row mt-1">
+            <div class="col">
+                <br />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+
+                <div class="card">
+
+                    <div class="card-body">
+
+                        <div class="row mt-1">
+                            <div class="col">
+                                <center>
+                                    <h4>Lecturer Details</h4>
+                                </center>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-md-4">
+                                <label class="form-label">Lecturer ID</label>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <asp:TextBox CssClass="form-control" ID="txtAuthorID" runat="server" placeholder="ID" ReadOnly="true"></asp:TextBox>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-8">
+                                <label class="form-label">Author Name</label>
+                                <div class="form-group">
+                                    <asp:TextBox CssClass="form-control" ID="txtAuthorName" runat="server" placeholder="Author Name" ReadOnly="true"></asp:TextBox>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row mt-1">
+            <div class="col">
+                <br />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+
+                <div class="card">
+
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col">
+                                <center>
+                                    <h4>Course List</h4>
+                                </center>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <hr />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <asp:GridView class="table table-striped table-bordered" 
+                                    ID="gvLecturer" runat="server" AutoGenerateColumns="False">
+                                    <Columns>
+                                        <asp:BoundField DataField="author_id" HeaderText="Mã môn học" ReadOnly="True" SortExpression="author_id" >
+                                        <HeaderStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                                        <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                                        </asp:BoundField>
+
+                                        <asp:BoundField DataField="author_name" HeaderText="Tên môn học" SortExpression="author_name" >
+                                        <HeaderStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                                        <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                                        </asp:BoundField>
+                                        <asp:CommandField HeaderText="Chi tiết" ShowSelectButton="True">
+                                        <HeaderStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                                        <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
+                                        </asp:CommandField>
+                                    </Columns>
+                                </asp:GridView>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
 
 </asp:Content>

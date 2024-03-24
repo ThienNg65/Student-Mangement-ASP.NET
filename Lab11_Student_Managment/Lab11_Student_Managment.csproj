@@ -122,6 +122,9 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Database\Lab10SQL.sql" />
+    <Content Include="dataTables\css\jquery.dataTables.min.css" />
+    <Content Include="dataTables\js\jquery.dataTables.min.js" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
