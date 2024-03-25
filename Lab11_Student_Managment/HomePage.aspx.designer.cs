@@ -15,30 +15,30 @@ namespace Lab11_Student_Managment
     {
 
         /// <summary>
-        /// txtAuthorID control.
+        /// maCB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAuthorID;
+        protected global::System.Web.UI.WebControls.TextBox maCB;
 
         /// <summary>
-        /// txtAuthorName control.
+        /// tenCB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAuthorName;
+        protected global::System.Web.UI.WebControls.TextBox tenCB;
 
         /// <summary>
-        /// gvLecturer control.
+        /// gvCourse control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvLecturer;
+        protected global::System.Web.UI.WebControls.GridView gvCourse;
     }
 }

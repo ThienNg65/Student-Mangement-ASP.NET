@@ -41,25 +41,25 @@
                         <div class="row mt-1">
                             <div class="col">
                                 <center>
-                                    <h4>Lecturer Details</h4>
+                                    <h4>Thông tin Cán bộ</h4>
                                 </center>
                             </div>
                         </div>
 
                         <div class="row mt-3">
                             <div class="col-md-4">
-                                <label class="form-label">Lecturer ID</label>
+                                <label class="form-label">Mã cán bộ</label>
                                 <div class="form-group">
                                     <div class="input-group">
-                                        <asp:TextBox CssClass="form-control" ID="txtAuthorID" runat="server" placeholder="ID" ReadOnly="true"></asp:TextBox>
+                                        <asp:TextBox CssClass="form-control" ID="maCB" runat="server" placeholder="ID" ReadOnly="true"></asp:TextBox>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="col-md-8">
-                                <label class="form-label">Author Name</label>
+                                <label class="form-label">Tên cán bộ</label>
                                 <div class="form-group">
-                                    <asp:TextBox CssClass="form-control" ID="txtAuthorName" runat="server" placeholder="Author Name" ReadOnly="true"></asp:TextBox>
+                                    <asp:TextBox CssClass="form-control" ID="tenCB" runat="server" placeholder="Name" ReadOnly="true"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -87,7 +87,7 @@
                         <div class="row">
                             <div class="col">
                                 <center>
-                                    <h4>Course List</h4>
+                                    <h4>Thông tin học phần giảng dạy</h4>
                                 </center>
                             </div>
                         </div>
@@ -101,7 +101,8 @@
                         <div class="row">
                             <div class="col">
                                 <asp:GridView class="table table-striped table-bordered" 
-                                    ID="gvLecturer" runat="server" AutoGenerateColumns="False">
+                                    OnSelectedIndexChanged="gvCourse_SelectedIndexChanged"
+                                    ID="gvCourse" runat="server" AutoGenerateColumns="False">
                                     <Columns>
                                         <asp:BoundField DataField="MaMon" HeaderText="Mã môn học" ReadOnly="True" SortExpression="MaMon" >
                                         <HeaderStyle HorizontalAlign="Center" VerticalAlign="Middle" />
