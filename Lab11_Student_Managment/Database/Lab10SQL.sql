@@ -110,7 +110,7 @@ insert into Diem(MSSV,MaMon,Diem) values ('B18003', 'CT251', 10)
 insert into Diem(MSSV,MaMon,Diem) values ('B18003', 'CT101', 10)
 
 
-select MaCB, MatKhau from CanBo where MaCB='001',MatKhau='123'
+select MaCB, MatKhau from CanBo where MaCB='001' and MatKhau='123'
 
 select m.MaMon, m.TenMon
 from MonHoc m join GiangDay g on m.MaMon = g.MaMon
@@ -125,3 +125,7 @@ SET Diem = '1'
 where MSSV = 'B18001' and MaMon = 'CT101'
 select *from Diem
 
+SELECT MonHoc.MaMon, MonHoc.TenMon, Diem.MSSV, SinhVien.HoTen, SinhVien.MaLop, Diem.Diem 
+FROM Diem INNER JOIN SinhVien ON Diem.MSSV = SinhVien.MSSV 
+	INNER JOIN MonHoc ON MonHoc.MaMon = Diem.MaMon
+WHERE Diem.MaMon = 'CT101'
