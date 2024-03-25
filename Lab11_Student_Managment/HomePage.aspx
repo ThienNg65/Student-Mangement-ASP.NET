@@ -103,12 +103,12 @@
                                 <asp:GridView class="table table-striped table-bordered" 
                                     ID="gvLecturer" runat="server" AutoGenerateColumns="False">
                                     <Columns>
-                                        <asp:BoundField DataField="author_id" HeaderText="Mã môn học" ReadOnly="True" SortExpression="author_id" >
+                                        <asp:BoundField DataField="MaMon" HeaderText="Mã môn học" ReadOnly="True" SortExpression="MaMon" >
                                         <HeaderStyle HorizontalAlign="Center" VerticalAlign="Middle" />
                                         <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
                                         </asp:BoundField>
 
-                                        <asp:BoundField DataField="author_name" HeaderText="Tên môn học" SortExpression="author_name" >
+                                        <asp:BoundField DataField="TenMon" HeaderText="Tên môn học" SortExpression="TenMon" >
                                         <HeaderStyle HorizontalAlign="Center" VerticalAlign="Middle" />
                                         <ItemStyle HorizontalAlign="Center" VerticalAlign="Middle" />
                                         </asp:BoundField>

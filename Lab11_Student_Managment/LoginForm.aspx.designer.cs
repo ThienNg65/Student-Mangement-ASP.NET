@@ -15,22 +15,22 @@ namespace Lab11_Student_Managment
     {
 
         /// <summary>
-        /// txtMemberID control.
+        /// txtMaCB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMemberID;
+        protected global::System.Web.UI.WebControls.TextBox txtMaCB;
 
         /// <summary>
-        /// txtPassword control.
+        /// txtMK control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPassword;
+        protected global::System.Web.UI.WebControls.TextBox txtMK;
 
         /// <summary>
         /// btnLogin control.

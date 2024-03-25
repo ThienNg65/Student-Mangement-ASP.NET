@@ -110,7 +110,7 @@ insert into Diem(MSSV,MaMon,Diem) values ('B18003', 'CT251', 10)
 insert into Diem(MSSV,MaMon,Diem) values ('B18003', 'CT101', 10)
 
 
-
+select MaCB, MatKhau from CanBo where MaCB='001',MatKhau='123'
 
 select m.MaMon, m.TenMon
 from MonHoc m join GiangDay g on m.MaMon = g.MaMon
