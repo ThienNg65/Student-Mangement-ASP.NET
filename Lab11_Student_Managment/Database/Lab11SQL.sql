@@ -53,21 +53,21 @@ alter table SinhVien add GioiTinh nvarchar(10);
 
 INSERT INTO SinhVien (MSSV, HoTen, MaLop)
 VALUES 
-	('B18001', 'Phạm Thị Bảo Nhiên', 'K44-01'),
-	('B18002', 'Nguyễn Văn An', 'K44-01'),
-	('B18003', 'Lê Hoài Anh', 'K44-01'),
-	('B18004', 'Nguyễn Lâm Hoàng Anh', 'K44-01'),
-	('B18005', 'Lê Minh Bằng', 'K44-01'),
-	('B18006', 'Vương Thừa Chấn', 'K44-02'),
-	('B18007', 'Cao Công Danh', 'K44-02'),
-	('B18008', 'Trịnh Lê Long Đức', 'K44-02'),
-	('B18009', 'Dương Lê Minh Hậu', 'K44-02'),
-	('B18010', 'Nguyễn Vũ Hoàng', 'K44-02'),
-	('B18011', 'Nguyễn Hoàng Thái Học', 'K44-03'),
-	('B18012', 'Nguyễn Quốc Huy', 'K44-03'),
-	('B18013', 'Võ Đoàn Gia Huy', 'K44-03'),
-	('B18014', 'Vũ Thị Bích Huyền', 'K44-03'),
-	('B18015', 'Hồ Việt Hưng', 'K44-03');
+	('B18001', N'Phạm Thị Bảo Nhiên', 'K44-01'),
+	('B18002', N'Nguyễn Văn An', 'K44-01'),
+	('B18003', N'Lê Hoài Anh', 'K44-01'),
+	('B18004', N'Nguyễn Lâm Hoàng Anh', 'K44-01'),
+	('B18005', N'Lê Minh Bằng', 'K44-01'),
+	('B18006', N'Vương Thừa Chấn', 'K44-02'),
+	('B18007', N'Cao Công Danh', 'K44-02'),
+	('B18008', N'Trịnh Lê Long Đức', 'K44-02'),
+	('B18009', N'Dương Lê Minh Hậu', 'K44-02'),
+	('B18010', N'Nguyễn Vũ Hoàng', 'K44-02'),
+	('B18011', N'Nguyễn Hoàng Thái Học', 'K44-03'),
+	('B18012', N'Nguyễn Quốc Huy', 'K44-03'),
+	('B18013', N'Võ Đoàn Gia Huy', 'K44-03'),
+	('B18014', N'Vũ Thị Bích Huyền', 'K44-03'),
+	('B18015', N'Hồ Việt Hưng', 'K44-03');
 
 INSERT INTO Lop (MaLop, TenLop)
 VALUES
@@ -77,15 +77,15 @@ VALUES
 
 INSERT INTO MonHoc (MaMon, TenMon)
 VALUES
-	('CT101', 'Lập trình căn bản'),
-	('CT103', 'Cấu trúc dữ liệu'),
-	('CT251', 'Phát triển ứng dựng trên Windows')
+	('CT101', N'Lập trình căn bản'),
+	('CT103', N'Cấu trúc dữ liệu'),
+	('CT251', N'Phát triển ứng dựng trên Windows')
 
 INSERT INTO CanBo (MaCB, TenCB, MatKhau)
 VALUES
-	('001', 'Nguyễn Văn Cường', '123'),
-	('002', 'Huỳnh Minh Phương', '123'),
-	('003', 'Thái Cẩm Nhung', '123')
+	('001', N'Nguyễn Văn Cường', '123'),
+	('002', N'Huỳnh Minh Phương', '123'),
+	('003', N'Thái Cẩm Nhung', '123')
 
 insert into GiangDay(MaCB, MaLop, MaMon) values ('001','K44-01','CT101')
 insert into GiangDay(MaCB, MaLop, MaMon) values ('001','K44-02','CT101')
